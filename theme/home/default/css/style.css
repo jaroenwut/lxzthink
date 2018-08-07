@@ -1,0 +1,9 @@
+@import "https://fonts.googleapis.com/css?family=Prompt";
+* {
+	margin: 0;
+}
+html, body {
+	font-family: 'Prompt',Tahoma, Arial, Helvetica, Sans-Serif;		
+	background-color: #f9f9f9;
+    height: 100%;
+}
