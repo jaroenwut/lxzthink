@@ -4,7 +4,7 @@
 }
 html, body {
 	font-family: 'Prompt',Tahoma, Arial, Helvetica, Sans-Serif;		
-	background-color: #f9f9f9;
+	background-color: #fcfcfc;
     height: 100%;
 }
 .modal-open {
@@ -14,20 +14,24 @@ html, body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+}
+/*#########Padding#########*/
+.padding-5{
+	padding:5px;
 }
 
+/*#########################*/
+/*#######Navbar Style#######*/
 .font-navbar {
 	font-size:14px;
 	color:#ffffff;	
 }
-
 .effectnav{
     background-color: #489ae8;	
 	margin-bottom: 0;
 	border:0px;
 }
-/*#######Navbar Style#######*/
 .navbar-top-links {
     margin-right: 0;    
 }
@@ -78,3 +82,110 @@ html, body {
     white-space: normal;
 }
 /*#########################*/
+/*##########Footer##########*/
+.footer, .push {
+  height: 0px; /* .push must be the same height as .footer */
+  margin-top: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.push {
+  background-color: #fafafa;
+}
+.font-footer {
+  color: #acacac !important;
+  font-size: 12px;
+}
+/*#########################*/
+/*/////////////////////////////////////////Device//////////////////////////////*/
+/* Large Devices, Wide Screens */
+@media(max-width : 1200px) 
+{
+
+}
+/* Small Devices, Tablets */
+@media(max-width : 768px) 
+{
+
+}
+/* Extra Small Devices */ 
+@media (min-width : 481px) and (max-width : 767px) 
+{
+	#search-control
+	{
+		padding-top:5px !important;		
+	}
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 481px) 
+{
+	#ddnav
+	{
+		text-align:right;
+		margin-top:0 !important;
+		padding-top:0 !important;
+		margin-bottom:0 !important;
+		padding-bottom:0 !important;			
+	}
+
+}
+@media screen and (max-width : 480px) 
+{
+	#brand
+	{
+		text-align:center;
+	}
+	#ddnav
+	{
+		text-align:right;
+		margin-top:0 !important;
+		padding-top:0 !important;
+		margin-bottom:0 !important;
+		padding-bottom:0 !important;			
+	}
+	#search-control
+	{
+		padding-top:5px !important;		
+	}	
+}
+/* Extra Small Devices, Phones */ 
+@media (min-width : 321px) and (max-width : 479px) 
+{
+	#brand
+	{
+		text-align:center;
+	}
+	#ddnav
+	{
+		text-align:right;
+		margin-top:0 !important;
+		padding-top:0 !important;
+		margin-bottom:0 !important;
+		padding-bottom:0 !important;			
+	}
+	#search-control
+	{
+		padding-top:5px !important;		
+	}	
+}
+/* Custom, iPhone Retina */ 
+@media(max-width : 320px) 
+{
+	#brand
+	{
+		text-align:center;
+	}
+	#ddnav
+	{
+		text-align:right;
+		margin-top:0 !important;
+		padding-top:0 !important;
+		margin-bottom:0 !important;
+		padding-bottom:0 !important;			
+	}
+	#search-control
+	{
+		padding-top:5px !important;		
+	}
+}
+/*////////////////////////////////////////////////////////////////////////////*/
