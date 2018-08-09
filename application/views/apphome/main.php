@@ -167,9 +167,9 @@
 								<div class="col-xs-6 col-lg-6">
 									<i class="fa fa-star icon-orange" data-rating="1"></i>
 									<i class="fa fa-star icon-orange" data-rating="2"></i>
-									<i class="fa fa-star-o icon-orange" data-rating="3"></i>
-									<i class="fa fa-star-o icon-orange" data-rating="4"></i>
-									<i class="fa fa-star-o icon-orange" data-rating="5"></i>	
+									<i class="fa fa-star icon-orange" data-rating="3"></i>
+									<i class="fa fa-star icon-orange" data-rating="4"></i>
+									<i class="fa fa-star icon-orange" data-rating="5"></i>	
 								</div>		
 								<div class="col-xs-6 col-lg-6 text-right">
 									<p class="font-flexmin">1 Votes</p>
