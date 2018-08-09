@@ -14,13 +14,20 @@ html, body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto -25px; /* the bottom margin is the negative value of the footer's height */
+}
+.font-pag{
+	color:#444444;
+	font-size:18px;
+	font-weight:bold;	
 }
 /*#########Padding#########*/
 .padding-5{
 	padding:5px;
 }
-
+.padding-top-10{
+	padding-top:10px;
+}
 /*#########################*/
 /*#######Navbar Style#######*/
 .font-navbar {
@@ -81,16 +88,70 @@ html, body {
 .navbar-top-links .dropdown-menu li a div {
     white-space: normal;
 }
-/*#########################*/
+/*##########################*/
+/*#######Flex Style#########*/
+.athumbnail:link{
+	text-decoration: none;	
+}
+.athumbnail:visited{	
+	text-decoration: none;	
+}
+.athumbnail:hover{
+	text-decoration: none;	
+}
+.athumbnail:active{
+	text-decoration: none;	
+}
+.thumbnail:hover{
+   background-color:#f5f5f5;
+   box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+   cursor:pointer;
+}
+.flex-row .thumbnail,.flex-row .caption 
+{
+  flex:1 0 auto;
+  flex-direction:column;
+}
+.flex-text {
+  flex-grow:1
+}
+.flex-row img {
+  height:150px;
+  width:100%
+}
+.font-flexhead
+{
+	color:#132752;
+	font-weight: bold;	
+	font-size:14px;	
+}
+.font-flexdetail
+{
+	color:#465c7b;	
+	font-size:12px;	
+}
+.font-flexmin
+{
+	color:#666666;	
+	font-size:12px;	
+}
+.font-flexowner
+{
+	color:#999999;	
+	font-size:12px;
+	text-align:right;
+}
+*.icon-orange {color: orange}
+/*##########################*/
 /*##########Footer##########*/
 .footer, .push {
-  height: 0px; /* .push must be the same height as .footer */
-  margin-top: 20px;
+  height: 25px; /* .push must be the same height as .footer */
+  margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 .push {
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 }
 .font-footer {
   color: #acacac !important;
@@ -127,7 +188,18 @@ html, body {
 		margin-bottom:0 !important;
 		padding-bottom:0 !important;			
 	}
-
+   .flex-row.row {
+	 display: flex;
+	 flex-wrap: wrap;
+   }
+   .flex-row.row > [class*='col-'] {
+	 display: flex;
+	 flex-direction: column;
+   }
+  .flex-row.row:after, 
+  .flex-row.row:before {
+	 display: flex;
+  }	
 }
 @media screen and (max-width : 480px) 
 {
