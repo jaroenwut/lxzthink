@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] = 'welcome';
 $route['default_controller'] = "homemain";
 $route['signin'] = "homesignin";
+$route['panel/login'] = "panellogin";
 
 
 

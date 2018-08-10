@@ -1,0 +1,83 @@
+@import "https://fonts.googleapis.com/css?family=Prompt";
+* {
+	margin: 0;
+}
+html, body {
+	font-family: 'Prompt',Tahoma, Arial, Helvetica, Sans-Serif;		
+	background-color: #fcfcfc;
+    height: 100%;
+}
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -25px; /* the bottom margin is the negative value of the footer's height */
+}
+/*#########Padding#########*/
+.padding-5{
+	padding:5px;
+}
+.padding-top-10{
+	padding-top:10px;
+}
+/*#########################*/
+/*#######Navbar Style#######*/
+.font-navbar {
+	font-size:14px;
+	color:#ffffff;	
+}
+.effectnav{
+    background-color: #489ae8;	
+	margin-bottom: 0;
+	border:0px;
+}
+.navbar-top-links {
+    margin-right: 0;    
+}
+.navbar-top-links .dropdown-menu
+{
+	background-color: #489ae8;
+}
+.navbar-top-links li {
+    display: inline-block;	
+}
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+.navbar-top-links li a {
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
+    padding-bottom: 2px;
+    min-height: 35px;
+	line-height: 30px; /*full height a hover*/
+}
+.navbar-top-links .dropdown-menu li {
+    display: block;
+	min-width:175px;
+	font-size:13px;
+}
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+	color:#ffffff;
+}
+.navbar-top-links .dropdown-menu li a:hover {
+	background-color: #0070c0;
+}
+.nav .open > a,
+.navbar-top-links > .active a:focus ,
+.navbar-top-links > .active a:hover,
+.navbar-top-links .dropdown-menu li a:focus ,
+.navbar-top-links .dropdown-menu li a:hover,
+.navbar-top-links li a:focus ,
+.navbar-top-links li a:hover {
+	background-color: #0070c0;
+}
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+/*##########################*/
