@@ -7,11 +7,27 @@ html, body {
 	background-color: #fcfcfc;
     height: 100%;
 }
+.modal-open {
+  overflow-y: auto;
+}
 #wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -25px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto 0px; /* the bottom margin is the negative value of the footer's height */
+}
+.btn-circle {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    padding: 4px 0;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 1.7;
+}
+.hr_title {
+    border-bottom: 2px solid #e6e9ed;
+    padding: 1px 5px 5px;
 }
 /*#########Padding#########*/
 .padding-5{
@@ -20,12 +36,17 @@ html, body {
 .padding-top-10{
 	padding-top:10px;
 }
+.padding-bottom-10{
+	padding-bottom:10px !important;
+}
+.clear-border{
+	margin-top:0px !important;
+	padding-top:0px !important;
+	margin-bottom:0px !important;
+	padding-bottom:0px !important;	
+}
 /*#########################*/
 /*#######Navbar Style#######*/
-.font-navbar {
-	font-size:14px;
-	color:#ffffff;	
-}
 .effectnav{
     background-color: #489ae8;	
 	margin-bottom: 0;
@@ -50,7 +71,7 @@ html, body {
 	padding-left: 5px;
     padding-bottom: 2px;
     min-height: 35px;
-	line-height: 30px; /*full height a hover*/
+	line-height: 32px; /*full height a hover*/
 }
 .navbar-top-links .dropdown-menu li {
     display: block;
@@ -79,5 +100,59 @@ html, body {
 }
 .navbar-top-links .dropdown-menu li a div {
     white-space: normal;
+}
+.dropdown-menu {
+	right: 0; 
+	left: auto;
+}
+.font-navbar {
+	font-size:14px;
+	color:#ffffff;	
+}
+/*##########################*/
+/*######Breadcrumb######*/
+.breadcrumb {
+	padding:0px;
+	margin:0;
+    background-color: transparent;
+}
+.breadcrumb li {
+	color:#000;
+	font-size: 14px;	
+}
+.breadcrumb li a:hover {	
+	text-decoration: none;		
+}
+/*#####################*/
+/*##########Panel##########*/
+.font-panel-login-head{
+	color:#111111;
+	font-size:22px;
+	font-weight:bold;
+}
+label.signin{
+	color:#808080;
+	font-size:13px;	
+	font-weight:bold;
+}
+.panel-login {
+    margin-top: 15%;
+	border-color: 1px solid #bbd3ea;	
+	background-color: #ffffff;
+	-webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;	
+}
+/*##########################*/
+/*##########Modal##########*/
+.font-modal-title {
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.font-modal-content {
+    color: #000000;
+    font-size: 14px;
+    font-weight: normal;
 }
 /*##########################*/

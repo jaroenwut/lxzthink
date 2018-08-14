@@ -52,9 +52,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //$route['default_controller'] = 'welcome';
 $route['default_controller'] = "homemain";
 $route['signin'] = "homesignin";
+
 $route['panel/login'] = "panellogin";
+$route['panel/main'] = "panelmain";
+$route['panel/models'] = "panelmodel";
+$route['panel/think'] = "panelthink";
+$route['panel/setting'] = "panelsetting";
+$route['panel/chgpwd'] = "panelchgpwd";
 
-
+$route['verify'] = "panellogin/check";
+$route['logout'] = "panelmain/logout";
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

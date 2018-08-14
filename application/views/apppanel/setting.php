@@ -22,7 +22,7 @@
 						<div class="row">
 							<div class="col-lg-12 padding-bottom-10">
 								<ol class="breadcrumb">
-									<li><i class="fa fa-home"></i> <b><?=lang('panel_main_panel_header');?></b></li>						
+									<li><i class="fa fa-cog"></i> <b><?=lang('panel_setting_panel_header');?></b></li>						
 								</ol>								
 							</div>								
 						</div>
@@ -37,4 +37,5 @@
 <?php include 'modalout.php';?>
 </body>
 </html>
+
 <?php include 'footer.php';?>

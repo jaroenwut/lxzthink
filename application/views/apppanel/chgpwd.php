@@ -15,14 +15,14 @@
 		<?php include 'navbar.php';?>
 	</nav>
 	<div class="container-fluid">	
-		<div class="row padding-top-10">	
+		<div class="row padding-top-10">
 			<div class="col-lg-12">		
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-lg-12 padding-bottom-10">
 								<ol class="breadcrumb">
-									<li><i class="fa fa-home"></i> <b><?=lang('panel_main_panel_header');?></b></li>						
+									<li><i class="fa fa-asterisk"></i> <b><?=lang('panel_chgpwd_panel_header');?></b></li>						
 								</ol>								
 							</div>								
 						</div>
@@ -37,4 +37,5 @@
 <?php include 'modalout.php';?>
 </body>
 </html>
+
 <?php include 'footer.php';?>
