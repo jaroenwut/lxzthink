@@ -18,7 +18,9 @@ $lang['panel_model_panel_header'] = "Model";
 $lang['panel_think_panel_header'] = "Think";
 
 $lang['panel_setting_panel_header'] = "Setting";
-
+$lang['panel_setting_btn_user'] = "User";
+$lang['panel_setting_user_panel_header'] = "User";
+$lang['panel_setting_user_new_panel_header'] = "New";
 
 $lang['panel_chgpwd_panel_header'] = "Change Password";
 

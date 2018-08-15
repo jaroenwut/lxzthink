@@ -16,19 +16,60 @@ html, body {
     height: 100%;
     margin: 0 auto 0px; /* the bottom margin is the negative value of the footer's height */
 }
-.btn-circle {
-    font-size: 18px;
-    width: 40px;
-    height: 40px;
-    padding: 4px 0;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 1.7;
-}
+
 .hr_title {
     border-bottom: 2px solid #e6e9ed;
     padding: 1px 5px 5px;
 }
+/*#########Loading#########*/
+#preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color:#f7f7f7;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
+   filter: alpha(opacity=70);  /* IE 5-7 */
+   -moz-opacity: 0.7;          /* Netscape */
+   -khtml-opacity: 0.7;        /* Safari 1.x */
+   opacity: 0.7;               /* Good browsers */	   
+   z-index: 10000; 
+}
+#status {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   left: 50%; 
+   top: 50%;
+   margin: -15px 0 0 -15px;
+   font-size: 32px;
+}
+.glyphicon-spin {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+/*#########################*/
 /*#########Padding#########*/
 .padding-5{
 	padding:5px;
@@ -39,11 +80,60 @@ html, body {
 .padding-bottom-10{
 	padding-bottom:10px !important;
 }
+.padding-left-20{
+	padding-left:20px !important;
+}
+.padding-left-30{
+	padding-left:30px !important;
+}
+.padding-right-30{
+	padding-right:30px !important;
+}
 .clear-border{
 	margin-top:0px !important;
 	padding-top:0px !important;
 	margin-bottom:0px !important;
 	padding-bottom:0px !important;	
+}
+/*#########################*/
+/*#########Button#########*/
+.btn-circle {
+    font-size: 14px;
+    width: 85px;
+    height: 85px;
+    padding: 7px 0;
+	background-color: #848aac;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 1.45;
+}
+.btn-circle:hover, .btn-circle:focus, .btn-circle:active, .btn-circle.active, .open>.dropdown-toggle.btn-circle {
+    color: #fff;
+    background-color: #949abc;
+    border-color: #ededed; /*set the color you want here*/
+}
+.btn-circle-min{
+    width: 38px;
+    height: 38px;
+    padding: 6px 0px;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+	background-color: #737896;
+}
+.icon-btn-circle{
+	color:#fefefe !important;
+}
+.font-btn-12
+{
+	color:#ffffff;
+	font-size:12px;
+}
+.padding-btn{
+	display: inline-block;
+	padding-top:5px !important;
+	padding-left:25px !important;
 }
 /*#########################*/
 /*#######Navbar Style#######*/
@@ -144,6 +234,14 @@ label.signin{
     border-radius: 0 !important;	
 }
 /*##########################*/
+/*#######DataTable#######*/
+table.dataTable thead tr {
+	background-color: #eaeaea;
+}
+div.dataTables_wrapper div.dataTables_paginate{
+	margin-top:10px !important;
+}
+/*####################*/
 /*##########Modal##########*/
 .font-modal-title {
     color: #000000;

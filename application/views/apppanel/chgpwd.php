@@ -10,6 +10,9 @@
 	<title><?=lang('panel_browser_title');?></title>
 </head>
 <body>
+<div id="preloader">
+    <div id="status"><span class="glyphicon glyphicon-refresh glyphicon-spin" aria-hidden="true"></span></div>
+</div>
 <div id="wrapper">
     <nav class="navbar navbar-default navbar-static-top effectnav" role="navigation">
 		<?php include 'navbar.php';?>
@@ -28,6 +31,51 @@
 						</div>
 						<div class="hr_title"></div>
 						<br>
+									<div class="row">
+										<div class="col-lg-12">								
+											<form id="frm" method="post" action="#" role="form" class="form-horizontal">								
+												<div class="row">									
+													<div class="col-lg-12">
+														<div class="form-group">
+															<label for="tbxuser" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label">Username</p></label>
+															<div class="col-sm-6 col-md-4 col-lg-3">
+																<p><?=$usernamesess;?></p>															
+															</div>												
+														</div>
+														<div class="form-group">
+															<label for="tbxpwd" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label">Old Password</p></label>
+															<div class="col-sm-6 col-md-4 col-lg-3">
+																<input type="password" id="tbxpwd" name="tbxpwd" maxlength="12" class="form-control"/>
+															</div>																							
+														</div>
+														<div class="form-group">
+															<label for="tbxcfpwd" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label">New Password</p></label>
+															<div class="col-sm-6 col-md-4 col-lg-3">
+																<input type="password" id="tbxcfpwd" name="tbxcfpwd" maxlength="12" class="form-control"/>
+															</div>																							
+														</div>
+														<div class="form-group">
+															<label for="tbxcfpwd" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label">Confirm Password</p></label>
+															<div class="col-sm-6 col-md-4 col-lg-3">
+																<input type="password" id="tbxcfpwd" name="tbxcfpwd" maxlength="12" class="form-control"/>
+															</div>																							
+														</div>														
+														<div class="form-group text-right">
+															<label class="col-sm-4 col-md-2 col-lg-2 control-label"></label>
+															<div class="col-sm-6 col-md-4 col-lg-3">
+																<button id="btnupdatesecure" name="btnupdatesecure" type="submit" class="btn btn-primary btn-sm" value="secure">
+																	<span class="glyphicon glyphicon-floppy-disk"></span> Save &nbsp;
+																</button>	
+																<a href="#" class="btn btn-primary btn-sm" role="button">
+																	<span class="glyphicon glyphicon-remove-sign"></span> Cancel
+																</a>													
+															</div>																							
+														</div>																												
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>						
 					</div>
 				</div>
 			</div>

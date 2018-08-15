@@ -21,8 +21,6 @@
 								<li><a href="<?php echo base_url("panel/models");?>"><i class="fa fa-square"></i> <?=lang('panel_navbar_menu_model');?></a></li>
 								<li><a href="<?php echo base_url("panel/think");?>"><i class="fa fa-edit"></i> <?=lang('panel_navbar_menu_think');?></a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="<?php echo base_url("panel/setting");?>"><i class="fa fa-cog"></i> <?=lang('panel_navbar_menu_setting');?></a></li>
-								<li role="separator" class="divider"></li>
 								<li><a href="<?php echo base_url("panel/chgpwd");?>"><i class="fa fa-asterisk"></i> <?=lang('panel_navbar_menu_changepwd');?></a></li>
 								<li><a href="#" data-toggle="modal" data-target="#LogoutModal" role="button"><i class="fa fa-sign-out-alt"></i> <?=lang('panel_navbar_menu_logout');?></a></li>
 							</ul>

@@ -10,6 +10,9 @@
 	<title><?=lang('panel_browser_title');?></title>
 </head>
 <body>
+<div id="preloader">
+    <div id="status"><span class="glyphicon glyphicon-refresh glyphicon-spin" aria-hidden="true"></span></div>
+</div>
 <div id="wrapper">
     <nav class="navbar navbar-default navbar-static-top effectnav" role="navigation">
 		<?php include 'navbar.php';?>
