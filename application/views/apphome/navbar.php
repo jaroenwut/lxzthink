@@ -5,7 +5,7 @@
 					<img src="<?php echo base_url();?>theme/shared/images/logo.png" alt="" />
 				</a>				
 			</div>		
-			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="ddnav">		
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" id="ddnav">	
 			</div>
 		</div>
 	</div>

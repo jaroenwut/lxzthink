@@ -23,6 +23,12 @@ $lang['panel_setting_user_panel_header'] = "User";
 $lang['panel_setting_user_new_panel_header'] = "New";
 
 $lang['panel_chgpwd_panel_header'] = "Change Password";
+$lang['panel_chgpwd_label_username'] = "Username";
+$lang['panel_chgpwd_label_oldpwd'] = "Old Password";
+$lang['panel_chgpwd_label_newpwd'] = "New Password";
+$lang['panel_chgpwd_label_cfpwd'] = "Confirm Password";
+$lang['panel_chgpwd_btn_update'] = "Update";
+$lang['panel_chgpwd_btn_cancel'] = "Cancel";
 
 
 $lang['panel_modal_logout_title'] = "Confirm Logout";

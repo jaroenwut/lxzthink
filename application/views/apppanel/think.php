@@ -25,6 +25,7 @@
 						<div class="row">
 							<div class="col-lg-12 padding-bottom-10">
 								<ol class="breadcrumb">
+									<li><a href="<?php echo base_url('panel/main');?>"><i class="fa fa-home"></i></a></li>
 									<li><i class="fa fa-edit"></i> <b><?=lang('panel_think_panel_header');?></b></li>						
 								</ol>								
 							</div>								

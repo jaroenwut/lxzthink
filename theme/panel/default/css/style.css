@@ -16,10 +16,24 @@ html, body {
     height: 100%;
     margin: 0 auto 0px; /* the bottom margin is the negative value of the footer's height */
 }
-
 .hr_title {
     border-bottom: 2px solid #e6e9ed;
     padding: 1px 5px 5px;
+}
+.font-label {
+    font-size: 14px;
+}
+.required:after {
+  content: " *";
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  color: red;
+  font-size: 18px;
+}
+label.error {  
+    color:red;
+    font-size:small;
 }
 /*#########Loading#########*/
 #preloader {

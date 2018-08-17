@@ -36,5 +36,9 @@ class PanelChgPwd extends CI_Controller
 		);	
 		$this->load->view('apppanel/chgpwd',$data);
 	}
+	public function update()
+	{
+
+	}	
 }
 ?>

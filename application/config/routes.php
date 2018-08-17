@@ -59,6 +59,7 @@ $route['panel/models'] = "panelmodel";
 $route['panel/think'] = "panelthink";
 
 $route['panel/chgpwd'] = "panelchgpwd";
+$route['panel/chgpwd/update'] = "panelchgpwd/update";
 
 $route['verify'] = "panellogin/check";
 $route['logout'] = "panelmain/logout";
