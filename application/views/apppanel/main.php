@@ -31,6 +31,29 @@
 						</div>
 						<div class="hr_title"></div>
 						<br>
+						<div class="row">
+							<div class="col-lg-3 font-label">
+								<b><?=lang('panel_main_section_title');?></b>
+							</div>
+							<div class="col-lg-9 text-right padding-top-10">
+								<form id="frm" name="frm" class="form-horizontal" role="form" action="#">
+										<div class="form-inline">
+											<div class="input-group date padding-top-5" id="datetimepicker1">
+												<input type="text" class="form-control" placeholder="From" />
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-calendar"></span>
+												</span>
+											</div>
+											<div class="input-group date padding-top-5" id="datetimepicker2">
+												<input type="text" class="form-control" placeholder="To"/>
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-calendar"></span>
+												</span>
+											</div>											
+										</div>
+								</form>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -41,3 +64,14 @@
 </body>
 </html>
 <?php include 'footer.php';?>
+<!-- Calendar -->	
+<script src="<?php echo base_url();?>frontend/js/moment/<?=$assetversion['js_version_moment']?>/moment.min.js"></script>	
+<link href="<?php echo base_url();?>frontend/css/bootstrap-datetimepicker/<?=$assetversion['css_version_bootstrap_datepicker']?>/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<script src="<?php echo base_url();?>frontend/js/bootstrap-datetimepicker/<?=$assetversion['js_version_bootstrap_datepicker']?>/js/bootstrap-datetimepicker.min.js"></script>
+
+<script>
+	$(function () {
+		$('#datetimepicker1').datetimepicker({format:'DD/MM/YYYY'});
+		$('#datetimepicker2').datetimepicker({format:'DD/MM/YYYY'});		
+	});	
+</script>

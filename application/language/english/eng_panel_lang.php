@@ -12,6 +12,7 @@ $lang['panel_login_pwd_label'] = "Password";
 $lang['panel_login_submit_btn'] = "Login";
 
 $lang['panel_main_panel_header'] = "Dashboard";
+$lang['panel_main_section_title'] = "Summary";
 
 $lang['panel_model_panel_header'] = "Model";
 
