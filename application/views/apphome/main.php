@@ -22,7 +22,7 @@
 						<div class="form-group">
 							<select class="form-control" id="sel-order">
 								<option>Sort by Lasted</option>
-								<option>Sort by Vote</option>
+								<option>Sort by Rate</option>
 							</select>
 							<div class="input-group" id="search-control">				
 								<input type="text" class="form-control" placeholder="Explorer your script..."/> 
@@ -60,7 +60,7 @@
 									<i class="far fa-star icon-orange" data-rating="5"></i>	
 								</div>		
 								<div class="col-xs-6 col-lg-6 text-right">
-									<p class="font-flexmin">1 Votes</p>
+									<p class="font-flexmin">1 Rated</p>
 								</div>							
 							</div>
 							<div>
@@ -88,7 +88,7 @@
 									<i class="far fa-star icon-orange" data-rating="5"></i>	
 								</div>		
 								<div class="col-xs-6 col-lg-6 text-right">
-									<p class="font-flexmin">200 Votes</p>
+									<p class="font-flexmin">200 Rated</p>
 								</div>							
 							</div>
 							<div>
@@ -116,7 +116,7 @@
 									<i class="far fa-star icon-orange" data-rating="5"></i>	
 								</div>		
 								<div class="col-xs-6 col-lg-6 text-right">
-									<p class="font-flexmin">1 Votes</p>
+									<p class="font-flexmin">1 Rated</p>
 								</div>							
 							</div>
 							<div>
@@ -144,7 +144,7 @@
 									<i class="fa fa-star icon-orange" data-rating="5"></i>	
 								</div>		
 								<div class="col-xs-6 col-lg-6 text-right">
-									<p class="font-flexmin">200 Votes</p>
+									<p class="font-flexmin">200 Rated</p>
 								</div>							
 							</div>
 							<div>
@@ -172,7 +172,7 @@
 									<i class="fa fa-star icon-orange" data-rating="5"></i>	
 								</div>		
 								<div class="col-xs-6 col-lg-6 text-right">
-									<p class="font-flexmin">1 Votes</p>
+									<p class="font-flexmin">1 Rated</p>
 								</div>							
 							</div>
 							<div>
@@ -200,7 +200,7 @@
 									<i class="fa fa-star icon-orange" data-rating="5"></i>	
 								</div>		
 								<div class="col-xs-6 col-lg-6 text-right">
-									<p class="font-flexmin">200 Votes</p>
+									<p class="font-flexmin">200 Rated</p>
 								</div>							
 							</div>
 							<div>

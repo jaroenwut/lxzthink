@@ -20,19 +20,12 @@ class PanelMain extends CI_Controller
 		}		
 	}
     public function index()
-    {	
-		$tmpuserid="";
-		$tmpusername="";
-		if($this->session->userdata('userprofile'))  
-		{	
-			$tmpuserid=$this->session->userdata['userprofile']['userid'];		
-			$tmpusername=$this->session->userdata['userprofile']['username'];			
-		}	
+    {
 		$data = array(		
 			'currentpanel' => $this->currentpanel,
 			'assetversion' => $this->assetversion,
-			'usernamesess' => $tmpusername,
-			'useridsess' => $tmpuserid			
+			'usernamesess' => $this->session->userdata['userprofile']['username'],
+			'useridsess' => $this->session->userdata['userprofile']['userid']			
 		);	
 		$this->load->view('apppanel/main',$data);
 	}

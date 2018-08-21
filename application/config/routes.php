@@ -55,7 +55,11 @@ $route['signin'] = "homesignin";
 
 $route['panel/login'] = "panellogin";
 $route['panel/main'] = "panelmain";
+
 $route['panel/models'] = "panelmodel";
+$route['panel/models/create'] = "panelmodel/create";
+
+
 $route['panel/think'] = "panelthink";
 
 $route['panel/chgpwd'] = "panelchgpwd";

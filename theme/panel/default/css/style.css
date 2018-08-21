@@ -23,6 +23,10 @@ html, body {
 .font-label {
     font-size: 14px;
 }
+.font-40-bold {
+  font-size: 40px;
+  font-weight: bold; 
+}
 .required:after {
   content: " *";
   position: absolute;
@@ -249,6 +253,9 @@ label.signin{
 	-webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;	
+}
+.panel-min-bg{
+	background-color:#fdfcfa;
 }
 /*##########################*/
 /*#######DataTable#######*/
