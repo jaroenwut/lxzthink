@@ -28,7 +28,7 @@
 							<div class="col-lg-6 padding-bottom-10">
 								<ol class="breadcrumb">
 									<li><a href="<?php echo base_url('panel/main');?>"><i class="fa fa-home"></i></a></li>
-									<li><i class="fa fa-square"></i> <b><?=lang('panel_model_panel_header');?></b></li>						
+									<li><i class="fa fa-square"></i> <b><?=lang('panel_models_panel_header');?></b></li>						
 								</ol>								
 							</div>	
 							<div class="col-lg-6 text-right">						
@@ -45,14 +45,12 @@
 									<thead>
 										<tr>
 											<th></th>
-											<th>Model</th>
-											<th>Status</th>
-											<th>Last Update</th>
+											<th>#</th>
+											<th><?=lang('panel_models_tb_col1');?></th>
+											<th><?=lang('panel_models_tb_col2');?></th>
+											<th><?=lang('panel_models_tb_col3');?></th>
 										</tr>
-									</thead>
-									<tbody>
-
-									</tbody>
+									</thead>								
 								</table>
 							</div>
 						</div>						
@@ -68,15 +66,34 @@
 <?php include 'footer.php';?>
 <!-- Data Table -->	
     <script src="<?php echo base_url();?>frontend/js/datatable/<?=$assetversion['js_version_datatable']?>/datatables.min.js"></script>
-	<script>	
+	<script>
 	$(document).ready(function() {
 		$('#tblmodel').DataTable(
 			{
-				"scrollX":true,        
-				"order":[[1,"desc"]],
-				"aaSorting":[],				
-				"columnDefs":[{"targets":0,"width":"5%"},{"targets":[0],"orderable": false},{"targets":0,"className": "text-center"}]		
+				"scrollX":true,			
+				"columnDefs": 
+				[
+					{"targets":[0],"orderable": false,"width":"10%","className": "text-center"},
+					{"targets":[1],"orderable": false,"width":"5%","className": "text-center"},				
+				],
+				"processing": true,
+				"serverSide": true,
+				"order": [],
+				"ajax": {
+					"url": "<?php echo site_url('panel/models/show')?>",
+					"type": "POST",
+					"dataSrc": function (jsonData) {
+					  for ( var i=0, len=jsonData.data.length ; i<len ; i++ ) 
+					  {
+						jsonData.data[i][0] = '<a href="<?php echo base_url('panel/models/edit/');?>'+jsonData.data[i][6]
+												+'"><i class="fa fa-pen"></i></a>&nbsp;&nbsp;&nbsp;'
+												+'<a href="#"><i class="fa fa-sliders-h"></i></a>&nbsp;&nbsp;&nbsp;';
+					  }
+					  
+					  return jsonData.data;
+					}					
+				}			
 			}
 		);		
-	} );	
+	} );
 	</script>

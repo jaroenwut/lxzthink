@@ -65,10 +65,10 @@
 												<label class="col-sm-4 col-md-2 col-lg-2 control-label"></label>
 												<div class="col-sm-6 col-md-4 col-lg-3">
 													<button id="btnupdatesecure" name="btnupdatesecure" type="submit" class="btn btn-primary btn-sm" value="secure">
-														<span class="glyphicon glyphicon-floppy-disk"></span> <?=lang('panel_chgpwd_btn_update');?> &nbsp;
+														<span class="glyphicon glyphicon-floppy-disk"></span> <?=lang('panel_btn_update');?> &nbsp;
 													</button>	
 													<a href="<?php echo base_url('panel/main');?>" class="btn btn-primary btn-sm" role="button">
-														<span class="glyphicon glyphicon-remove-sign"></span> <?=lang('panel_chgpwd_btn_cancel');?>
+														<span class="glyphicon glyphicon-remove-sign"></span> <?=lang('panel_btn_cancel');?>
 													</a>													
 												</div>																							
 											</div>																												

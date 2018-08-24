@@ -13,8 +13,7 @@ class PanelLogin extends CI_Controller
 			}else{			
 				redirect('panel/main');
 			}	
-		}
-		{
+		}else{
 			$this->currentpanel = $this->config->item('theme_panel');
 			$this->assetversion = $this->config->item('asset_version');		
 			$this->lang->load('eng_panel','english');			

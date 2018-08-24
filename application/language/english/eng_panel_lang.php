@@ -1,5 +1,14 @@
 <?php
 $lang['panel_browser_title'] = "Lexgazy Thinks Panel";
+
+$lang['panel_btn_save'] = "Save";
+$lang['panel_btn_update'] = "Update";
+$lang['panel_btn_cancel'] = "Cancel";
+$lang['panel_btn_delete'] = "Delete";
+
+$lang['panel_bc_create'] = "Create";
+$lang['panel_bc_edit'] = "Edit";
+
 $lang['panel_navbar_menu_model'] = "Model";
 $lang['panel_navbar_menu_think'] = "Think";
 $lang['panel_navbar_menu_setting'] = "Setting";
@@ -14,7 +23,13 @@ $lang['panel_login_submit_btn'] = "Login";
 $lang['panel_main_panel_header'] = "Dashboard";
 $lang['panel_main_section_title'] = "Summary";
 
-$lang['panel_model_panel_header'] = "Model";
+$lang['panel_models_panel_header'] = "Model";
+$lang['panel_models_tb_col1'] = "Model";
+$lang['panel_models_tb_col2'] = "Status";
+$lang['panel_models_tb_col3'] = "Last Update";
+$lang['panel_models_label_name'] = "Model Name";
+$lang['panel_models_label_desc'] = "Description";
+
 
 $lang['panel_think_panel_header'] = "Think";
 
