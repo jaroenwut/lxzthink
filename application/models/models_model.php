@@ -97,6 +97,24 @@ class Models_Model extends CI_Model
 		);    
 		$this->db->insert($this->table, $datainsert);	
 	}
+	public function updatemodels($data) 
+	{	
+		$dataupdate = array(				
+			'models_name' => $data['modelsname'],
+			'models_desc' => $data['modelsdesc'],			
+			'models_updatedate' => date('Y-m-d H:i:s'),
+			'models_updateby' => $data['updateby']
+		);
+		$this->db->where('models_key',$data['modelskey']);
+		$this->db->update($this->table, $dataupdate);
+		return '0';		
+	}
+	public function deletemodels($key) 
+	{
+		$this->db->where('models_key',$key);
+		$this->db->delete($this->table);	
+		return '0';
+	}		
 }
 
 ?>

@@ -5,6 +5,8 @@ $lang['panel_btn_save'] = "Save";
 $lang['panel_btn_update'] = "Update";
 $lang['panel_btn_cancel'] = "Cancel";
 $lang['panel_btn_delete'] = "Delete";
+$lang['panel_modal_delete_title'] = "Confirm Delete";
+$lang['panel_modal_delete_content'] = "Do you want delete this record?";
 
 $lang['panel_bc_create'] = "Create";
 $lang['panel_bc_edit'] = "Edit";

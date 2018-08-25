@@ -115,5 +115,46 @@ class PanelModels extends CI_Controller
 			}			
 		}			
 	}
+	public function update()
+	{
+		if(isset($_POST) && $this->input->post('btnupdate'))
+		{		
+			$data['modelskey'] = $this->input->post('hidkey');
+			$data['modelsname'] = $this->input->post('tbxmodelsname');	
+			$data['modelsdesc'] = $this->input->post('tbxmodelsdesc');
+			$data['updateby'] = $this->session->userdata['userprofile']['username'];	
+			$result = $this->modelsmodel->updatemodels($data);
+			switch ($result) 
+			{
+				case "0":
+					redirect('panel/models');
+				break;
+				default:
+					redirect('panel/models');
+				break;
+			}			
+		}else{
+			redirect('panel/models');
+		}
+	}	
+	public function delete()
+	{
+		if(isset($_POST) && $this->input->post('btndel'))
+		{		
+			$key = $this->input->post('hididdel');
+			$result = $this->modelsmodel->deletemodels($key);
+			switch ($result) 
+			{
+				case "0":
+					redirect('panel/models');
+				break;
+				default:
+					redirect('panel/models');
+				break;
+			}			
+		}else{
+			redirect('panel/models');		
+		}
+	}
 }
 ?>

@@ -23,9 +23,9 @@ if($operation=='add')
 }else{
 	$operation='update';
 	$bc=lang('panel_bc_edit');
-	$valuebtn='save';
+	$valuebtn='update';
 	$textbtn=lang('panel_btn_update');
-	$namebtn='btnsave';
+	$namebtn='btnupdate';
 }
 ?>
 <div id="preloader">
@@ -64,7 +64,6 @@ if($operation=='add')
 									<div class="row">									
 										<div class="col-lg-12">								
 											<div class="form-group">
-												<input type="hidden" name="hidid" id="hidid" value="<?=$id?>"/>
 												<input type="hidden" name="hidkey" id="hidkey" value="<?=$key?>"/>											
 												<label for="tbxmodelsname" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label"><?=lang('panel_models_label_name');?></p></label>
 												<div class="col-sm-6 col-md-4 col-lg-3 required">
@@ -100,14 +99,14 @@ if($operation=='add')
     <div id="DeleteModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
-			<form id="frmdel" method="post" action="#" role="form" class="form-horizontal">			
+			<form id="frmdel" method="post" action="<?=site_url('panel/models/delete'); ?>" role="form" class="form-horizontal">			
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <p class="modal-title font-modal-title">Confirm Delete</p>
+                    <p class="modal-title font-modal-title"><?=lang('panel_modal_delete_title');?></p>
                 </div>
                 <div class="modal-body">
-					<input type="hidden" name="hididdel" id="hididdel" value=""/>
-                    <p class="modal-title font-modal-content">Do you want delete this record?</p>
+					<input type="hidden" name="hididdel" id="hididdel" value="<?=$key?>"/>
+                    <p class="modal-title font-modal-content"><?=lang('panel_modal_delete_content');?></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btn-sm" data-dismiss="modal"><span class="glyphicon glyphicon-remove-sign"></span> <?=lang('panel_btn_cancel')?></button>

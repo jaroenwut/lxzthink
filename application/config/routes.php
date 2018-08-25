@@ -62,6 +62,8 @@ $route['panel/models/create'] = "panelmodels/create";
 $route['panel/models/add'] = "panelmodels/add";
 $route['panel/models/edit'] = "panelmodels";
 $route['panel/models/edit/(:any)'] = "panelmodels/edit/$1";
+$route['panel/models/update'] = "panelmodels/update";
+$route['panel/models/delete'] = "panelmodels/delete";
 
 $route['panel/think'] = "panelthink";
 
