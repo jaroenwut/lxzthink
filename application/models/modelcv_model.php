@@ -2,11 +2,11 @@
 /*Original Code : 
  - https://mbahcoding.com/tutorial/php/codeigniter/codeigniter-simple-server-side-datatable-example.html
 */
-class Models_Model extends CI_Model 
+class Modelcv_Model extends CI_Model 
 {
     var $table = 'txz_models';
     var $column_order = array(null,null,'models_name','models_status','models_updatedate'); //set column field database for datatable orderable
-    var $column_search = array('models_name'); //set column field database for datatable searchable 
+    var $column_search = array('models_name','models_desc'); //set column field database for datatable searchable 
     var $order = array('models_updatedate' => 'desc'); // default order 
 	
 	public function __construct() 

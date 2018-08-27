@@ -55,15 +55,17 @@ $route['signin'] = "homesignin";
 
 $route['panel/login'] = "panellogin";
 $route['panel/main'] = "panelmain";
+$route['panel/setting'] = "panelsetting";
 
-$route['panel/models'] = "panelmodels";
-$route['panel/models/show'] = "panelmodels/show";
-$route['panel/models/create'] = "panelmodels/create";
-$route['panel/models/add'] = "panelmodels/add";
-$route['panel/models/edit'] = "panelmodels";
-$route['panel/models/edit/(:any)'] = "panelmodels/edit/$1";
-$route['panel/models/update'] = "panelmodels/update";
-$route['panel/models/delete'] = "panelmodels/delete";
+$route['panel/modelcv'] = "panelmodelcv";
+$route['panel/modelcv/show'] = "panelmodelcv/show";
+$route['panel/modelcv/create'] = "panelmodelcv/create";
+$route['panel/modelcv/add'] = "panelmodelcv/add";
+$route['panel/modelcv/edit'] = "panelmodelcv";
+$route['panel/modelcv/edit/(:any)'] = "panelmodelcv/edit/$1";
+$route['panel/modelcv/update'] = "panelmodelcv/update";
+$route['panel/modelcv/delete'] = "panelmodelcv/delete";
+$route['panel/modelcv/element'] = "panelmodelcv/element";
 
 $route['panel/think'] = "panelthink";
 

@@ -28,11 +28,11 @@
 							<div class="col-lg-6 padding-bottom-10">
 								<ol class="breadcrumb">
 									<li><a href="<?php echo base_url('panel/main');?>"><i class="fa fa-home"></i></a></li>
-									<li><i class="fa fa-square"></i> <b><?=lang('panel_models_panel_header');?></b></li>						
+									<li><i class="fa fa-clone"></i> <b><?=lang('panel_modelcv_panel_header');?></b></li>						
 								</ol>								
 							</div>	
 							<div class="col-lg-6 text-right">						
-								<a href="<?php echo base_url('panel/models/create');?>" class="btn btn-primary btn-circle-min" data-toggle="tooltip" data-placement="bottom" role="button">
+								<a href="<?php echo base_url('panel/modelcv/create');?>" class="btn btn-primary btn-circle-min" data-toggle="tooltip" data-placement="bottom" role="button">
 									<i class="fa fa-plus"></i>
 								</a>														
 							</div>								
@@ -46,9 +46,9 @@
 										<tr>
 											<th></th>
 											<th>#</th>
-											<th><?=lang('panel_models_tb_col1');?></th>
-											<th><?=lang('panel_models_tb_col2');?></th>
-											<th><?=lang('panel_models_tb_col3');?></th>
+											<th><?=lang('panel_modelcv_tb_col1');?></th>
+											<th><?=lang('panel_modelcv_tb_col2');?></th>
+											<th><?=lang('panel_modelcv_tb_col3');?></th>
 										</tr>
 									</thead>								
 								</table>
@@ -80,14 +80,14 @@
 				"serverSide": true,
 				"order": [],
 				"ajax": {
-					"url": "<?php echo site_url('panel/models/show')?>",
+					"url": "<?php echo site_url('panel/modelcv/show')?>",
 					"type": "POST",
 					"dataSrc": function (jsonData) {
 					  for ( var i=0, len=jsonData.data.length ; i<len ; i++ ) 
 					  {
-						jsonData.data[i][0] = '<a href="<?php echo base_url('panel/models/edit/');?>'+jsonData.data[i][6]
+						jsonData.data[i][0] = '<a href="<?php echo base_url('panel/modelcv/edit/');?>'+jsonData.data[i][6]
 												+'"><i class="fa fa-pen"></i></a>&nbsp;&nbsp;&nbsp;'
-												+'<a href="#"><i class="fa fa-sliders-h"></i></a>&nbsp;&nbsp;&nbsp;';
+												+'<a href="<?php echo base_url('panel/modelcv/element/');?>"><i class="fa fa-sliders-h"></i></a>&nbsp;&nbsp;&nbsp;';
 					  }
 					  
 					  return jsonData.data;

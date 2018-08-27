@@ -23,10 +23,6 @@ html, body {
 .font-label {
     font-size: 14px;
 }
-.font-40-bold {
-  font-size: 40px;
-  font-weight: bold; 
-}
 .required:after {
   content: " *";
   position: absolute;
@@ -100,6 +96,9 @@ label.error {
 }
 .padding-bottom-10{
 	padding-bottom:10px !important;
+}
+.padding-bottom-20{
+	padding-bottom:20px !important;
 }
 .padding-left-20{
 	padding-left:20px !important;
@@ -255,12 +254,25 @@ label.signin{
     border-radius: 0 !important;	
 }
 .panel-min-bg{
-	background-color:#fdfcfa;
+	background-color:#5c67aa;
+}
+.font-min-panel {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+}
+.font-40-bold {
+  color: #ffffff;	
+  font-size: 40px;
+  font-weight: bold; 
 }
 /*##########################*/
 /*#######DataTable#######*/
 table.dataTable thead tr {
 	background-color: #eaeaea;
+}
+table.dataTable td {
+  padding:4px !important;
 }
 div.dataTables_wrapper div.dataTables_paginate{
 	margin-top:10px !important;

@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class PanelModels extends CI_Controller
+class PanelModelcv extends CI_Controller
 {
 	public $currentpanel = null;
 	public $assetversion = null;
@@ -14,7 +14,7 @@ class PanelModels extends CI_Controller
 				$this->currentpanel = $this->config->item('theme_panel');
 				$this->assetversion = $this->config->item('asset_version');		
 				$this->lang->load('eng_panel','english');
-				$this->load->model('models_model','modelsmodel');	
+				$this->load->model('modelcv_model','modelcvmodel');	
 			}	
 		}else{
 			redirect(base_url());
@@ -28,11 +28,11 @@ class PanelModels extends CI_Controller
 			'usernamesess' => $this->session->userdata['userprofile']['username'],
 			'useridsess' => $this->session->userdata['userprofile']['userid']
 		);	
-		$this->load->view('apppanel/models',$data);
+		$this->load->view('apppanel/modelcv',$data);
 	}
 	public function show()
     {
-        $list = $this->modelsmodel->getmodels();
+        $list = $this->modelcvmodel->getmodels();
         $data = array();
         $no = isset($_POST['start']) ? $_POST['start'] : 0;
         foreach ($list as $models) {
@@ -49,8 +49,8 @@ class PanelModels extends CI_Controller
         }
         $output = array(
                         "draw" => isset($_POST['draw']) ? $_POST['draw'] : "",
-                        "recordsTotal" => $this->modelsmodel->count_all(),
-                        "recordsFiltered" => $this->modelsmodel->count_filtered(),
+                        "recordsTotal" => $this->modelcvmodel->count_all(),
+                        "recordsFiltered" => $this->modelcvmodel->count_filtered(),
                         "data" => $data,
                 );
         echo json_encode($output);		
@@ -68,7 +68,7 @@ class PanelModels extends CI_Controller
 			'modelsname'=>'',
 			'modelsdesc'=>''			
 		);		
-		$this->load->view('apppanel/modelsform',$data);	
+		$this->load->view('apppanel/modelcvform',$data);	
 	}
     public function add()
     {	
@@ -79,24 +79,24 @@ class PanelModels extends CI_Controller
 			$data['modelsstatus'] = 'ACTIVE';			
 			$data['createby'] = $this->session->userdata['userprofile']['username'];	
 			$data['updateby'] = $this->session->userdata['userprofile']['username'];			
-			$result = $this->modelsmodel->addmodels($this->security->xss_clean($data));					
-			redirect('panel/models');
+			$result = $this->modelcvmodel->addmodels($this->security->xss_clean($data));					
+			redirect('panel/modelcv');
 			
 		}else{
-			redirect('panel/models');			
+			redirect('panel/modelcv');			
 		}
 	}
 	public function edit($key="")
 	{	
 		if($key=="")
 		{
-			redirect('panel/models');
+			redirect('panel/modelcv');
 		}else{		
-			$result = $this->modelsmodel->getmodelsbykey($key);
+			$result = $this->modelcvmodel->getmodelsbykey($key);
 			switch ($result) 
 			{
 				case "88":
-					redirect('panel/models');
+					redirect('panel/modelcv');
 				break;
 				default:
 					$data = array(		
@@ -110,7 +110,7 @@ class PanelModels extends CI_Controller
 						'modelsname'=>$result['models_name'],
 						'modelsdesc'=>$result['models_desc']
 					);	
-					$this->load->view('apppanel/modelsform',$data);	
+					$this->load->view('apppanel/modelcvform',$data);	
 				break;
 			}			
 		}			
@@ -123,18 +123,18 @@ class PanelModels extends CI_Controller
 			$data['modelsname'] = $this->input->post('tbxmodelsname');	
 			$data['modelsdesc'] = $this->input->post('tbxmodelsdesc');
 			$data['updateby'] = $this->session->userdata['userprofile']['username'];	
-			$result = $this->modelsmodel->updatemodels($data);
+			$result = $this->modelcvmodel->updatemodels($data);
 			switch ($result) 
 			{
 				case "0":
-					redirect('panel/models');
+					redirect('panel/modelcv');
 				break;
 				default:
-					redirect('panel/models');
+					redirect('panel/modelcv');
 				break;
 			}			
 		}else{
-			redirect('panel/models');
+			redirect('panel/modelcv');
 		}
 	}	
 	public function delete()
@@ -142,18 +142,18 @@ class PanelModels extends CI_Controller
 		if(isset($_POST) && $this->input->post('btndel'))
 		{		
 			$key = $this->input->post('hididdel');
-			$result = $this->modelsmodel->deletemodels($key);
+			$result = $this->modelcvmodel->deletemodels($key);
 			switch ($result) 
 			{
 				case "0":
-					redirect('panel/models');
+					redirect('panel/modelcv');
 				break;
 				default:
-					redirect('panel/models');
+					redirect('panel/modelcv');
 				break;
 			}			
 		}else{
-			redirect('panel/models');		
+			redirect('panel/modelcv');		
 		}
 	}
 }

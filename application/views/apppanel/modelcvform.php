@@ -35,7 +35,7 @@ if($operation=='add')
     <nav class="navbar navbar-default navbar-static-top effectnav" role="navigation">
 		<?php include 'navbar.php';?>
 	</nav>
-	<div class="container-fluid">	
+	<div class="container-fluid">
 		<div class="row padding-top-10">
 			<div class="col-lg-12">		
 				<div class="panel panel-default">
@@ -44,7 +44,7 @@ if($operation=='add')
 							<div class="col-lg-9 padding-bottom-10">
 								<ol class="breadcrumb">
 									<li><a href="<?php echo base_url('panel/main');?>"><i class="fa fa-home"></i></a></li>
-									<li><a href="<?php echo base_url('panel/models');?>"><i class="fa fa-square"></i> <?=lang('panel_model_panel_header');?></a></li>		
+									<li><a href="<?php echo base_url('panel/modelcv');?>"><i class="fa fa-clone"></i> <?=lang('panel_modelcv_panel_header');?></a></li>		
 									<li><?=$bc?></li>									
 								</ol>								
 							</div>
@@ -60,18 +60,18 @@ if($operation=='add')
 						<br>
 						<div class="row">
 							<div class="col-lg-12">								
-								<form id="frm" method="post" action="<?=site_url('panel/models/'.$operation); ?>" role="form" class="form-horizontal">	
+								<form id="frm" method="post" action="<?=site_url('panel/modelcv/'.$operation); ?>" role="form" class="form-horizontal">	
 									<div class="row">									
 										<div class="col-lg-12">								
 											<div class="form-group">
 												<input type="hidden" name="hidkey" id="hidkey" value="<?=$key?>"/>											
-												<label for="tbxmodelsname" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label"><?=lang('panel_models_label_name');?></p></label>
+												<label for="tbxmodelsname" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label"><?=lang('panel_modelcv_label_name');?></p></label>
 												<div class="col-sm-6 col-md-4 col-lg-3 required">
 													<input type="text" id="tbxmodelsname" name="tbxmodelsname" maxlength="12" class="form-control" value="<?=$modelsname?>"/>
 												</div>													
 											</div>
 											<div class="form-group">		
-												<label for="tbxmodelsdesc" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label"><?=lang('panel_models_label_desc');?></p></label>
+												<label for="tbxmodelsdesc" class="col-sm-4 col-md-2 col-lg-2 control-label"><p class="font-label"><?=lang('panel_modelcv_label_desc');?></p></label>
 												<div class="col-sm-6 col-md-4 col-lg-3">
 													<textarea class="form-control" rows="5" id="tbxmodelsdesc" name="tbxmodelsdesc" maxlength="200"><?=$modelsdesc?></textarea>
 												</div>
@@ -81,8 +81,8 @@ if($operation=='add')
 									<div class="form-group text-right">
 										<label class="col-sm-4 col-md-2 col-lg-2 control-label"></label>
 										<div class="col-sm-6 col-md-4 col-lg-3">
-											<button type="submit" class="btn btn-primary" id="<?=$namebtn?>" name="<?=$namebtn?>" value="<?=$valuebtn?>"><?=$textbtn?></button>
-											<a href="<?php echo site_url('panel/models')?>" class="btn btn-primary" role="button"><?=lang('panel_btn_cancel');?></a>													
+											<button type="submit" class="btn btn-primary" id="<?=$namebtn?>" name="<?=$namebtn?>" value="<?=$valuebtn?>"><i class="fa fa-save"></i> <?=$textbtn?></button>
+											<a href="<?php echo site_url('panel/modelcv')?>" class="btn btn-primary" role="button"><i class="fa fa-times-circle"></i> <?=lang('panel_btn_cancel');?></a>													
 										</div>
 									</div>									
 								</form>
@@ -99,7 +99,7 @@ if($operation=='add')
     <div id="DeleteModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
-			<form id="frmdel" method="post" action="<?=site_url('panel/models/delete'); ?>" role="form" class="form-horizontal">			
+			<form id="frmdel" method="post" action="<?=site_url('panel/modelcv/delete'); ?>" role="form" class="form-horizontal">			
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <p class="modal-title font-modal-title"><?=lang('panel_modal_delete_title');?></p>

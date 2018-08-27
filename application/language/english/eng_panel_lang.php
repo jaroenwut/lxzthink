@@ -7,12 +7,9 @@ $lang['panel_btn_cancel'] = "Cancel";
 $lang['panel_btn_delete'] = "Delete";
 $lang['panel_modal_delete_title'] = "Confirm Delete";
 $lang['panel_modal_delete_content'] = "Do you want delete this record?";
-
 $lang['panel_bc_create'] = "Create";
 $lang['panel_bc_edit'] = "Edit";
 
-$lang['panel_navbar_menu_model'] = "Model";
-$lang['panel_navbar_menu_think'] = "Think";
 $lang['panel_navbar_menu_setting'] = "Setting";
 $lang['panel_navbar_menu_changepwd'] = "Change Password";
 $lang['panel_navbar_menu_logout'] = "Logout";
@@ -25,17 +22,22 @@ $lang['panel_login_submit_btn'] = "Login";
 $lang['panel_main_panel_header'] = "Dashboard";
 $lang['panel_main_section_title'] = "Summary";
 
-$lang['panel_models_panel_header'] = "Model";
-$lang['panel_models_tb_col1'] = "Model";
-$lang['panel_models_tb_col2'] = "Status";
-$lang['panel_models_tb_col3'] = "Last Update";
-$lang['panel_models_label_name'] = "Model Name";
-$lang['panel_models_label_desc'] = "Description";
+$lang['panel_modelcv_panel_header'] = "Model";
+$lang['panel_modelcv_tb_col1'] = "Model Name";
+$lang['panel_modelcv_tb_col2'] = "Status";
+$lang['panel_modelcv_tb_col3'] = "Last Update";
+$lang['panel_modelcv_label_name'] = "Model Name";
+$lang['panel_modelcv_label_desc'] = "Description";
+
+$lang['panel_modelcv_element_panel_header'] = "Elements";
 
 
 $lang['panel_think_panel_header'] = "Think";
 
 $lang['panel_setting_panel_header'] = "Setting";
+$lang['panel_setting_section_title'] = "System";
+
+
 $lang['panel_setting_btn_user'] = "User";
 $lang['panel_setting_user_panel_header'] = "User";
 $lang['panel_setting_user_new_panel_header'] = "New";

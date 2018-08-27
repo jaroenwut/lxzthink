@@ -63,8 +63,8 @@
 								<div class="panel panel-default">
 									<div class="panel-body panel-min-bg">
 										<div class="row">
-											<div class="col-lg-12">
-												<i class="fa fa-square"></i> Total Model
+											<div class="col-lg-12 font-min-panel ">
+												<i class="fa fa-clone"></i> Total Model
 											</div>
 										</div>
 										<div class="row">
@@ -79,7 +79,7 @@
 								<div class="panel panel-default">
 									<div class="panel-body panel-min-bg">
 										<div class="row">
-											<div class="col-lg-12">
+											<div class="col-lg-12 font-min-panel ">
 												<i class="fa fa-edit"></i> Total Think
 											</div>
 										</div>
@@ -93,7 +93,7 @@
 							</div>
 							<div class="col-lg-3">
 								<div class="panel panel-default">
-									<div class="panel-body panel-min-bg">
+									<div class="panel-body panel-min-bg font-min-panel ">
 										<div class="row">
 											<div class="col-lg-12">
 												<i class="fa fa-archway"></i> Total Visited
@@ -109,7 +109,7 @@
 							</div>
 							<div class="col-lg-3">
 								<div class="panel panel-default">
-									<div class="panel-body panel-min-bg">
+									<div class="panel-body panel-min-bg font-min-panel ">
 										<div class="row">
 											<div class="col-lg-12">
 												<i class="fa fa-star"></i> Total Rated
@@ -151,15 +151,15 @@
 <script>
 	var data3 = {
 		labels: ["27 Jan", "28 Jan", "29 Jan","30 Jan","31 Jan","1 Feb", "2 Feb", "3 Feb","4 Feb","5 Feb"],
-		datasets: [{label: "Think",data:[10,20,5,10,7,90,58,39,87,119],backgroundColor: "rgba(200,250,80,5)"}]					
+		datasets: [{label: "Think",data:[10,20,5,10,7,90,58,39,87,119],backgroundColor: "rgba(250,250,0,5)"}]					
 	};
 	var options3 = {legend:{display: false},	
 	responsive: true, 
 	maintainAspectRatio: false,
-	title: {display: true,text: 'Think by Date'},
+	title: {display: true,text: 'Think by Date',fontColor: 'white'},
     scales: {
-        yAxes: [{display: true,ticks:{suggestedMin: 0,beginAtZero: true},scaleLabel:{display: true,labelString: 'Think'}}],
-		xAxes: [{scaleLabel:{display: true,labelString: 'Date'}}]
+        yAxes: [{display: true,ticks:{suggestedMin: 0,beginAtZero: true, fontColor: 'white'},scaleLabel:{display: true,labelString: 'Think',fontColor: 'white'}}],
+		xAxes: [{scaleLabel:{display: true,labelString: 'Date',fontColor: 'white'},ticks:{ fontColor: 'white'}}]
 	}
 	};	
 	var myBarChart = new Chart('chartcanvas3', 
