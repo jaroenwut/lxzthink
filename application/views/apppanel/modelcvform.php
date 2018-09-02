@@ -123,7 +123,7 @@ if($operation=='add')
 <!-- Validate Plugin JavaScript -->
     <script src="<?php echo base_url();?>frontend/js/validate/<?=$assetversion['js_version_validate']?>/jquery.validate.min.js"></script>
 <!-- Custom Validate -->
-    <script src="<?php echo base_url();?>frontend/js/custom/lang/en/valid-models.js"></script>
+    <script src="<?php echo base_url();?>frontend/js/custom/valid/lang/en/valid-models.js"></script>
 	<script>
 	$(window).bind("pageshow", function() {
 		var form = $('form'); 
